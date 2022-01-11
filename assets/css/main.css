@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind forms;
+
+@layer base {
+    body {
+        @apply bg-gray-50
+    }
+
+    h1 {
+        @apply text-4xl;
+        @apply font-bold;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        font-family: 'Aref Ruqaa';
+    }
+
+    p {
+        padding-top: 3px;
+        line-height: 2rem;
+        /* padding-bottom: 3px; */
+    }
+    
+    .font-aref-ruqaa {
+        font-family: 'Aref Ruqaa';
+    }
+
+    .font-almarai {
+        font-family: 'Almarai';
+    }
+}
+
+.container {
+    max-width: 960px;
+}
