@@ -18,7 +18,13 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [{
+      src: 'https://plausable.shehata.io/js/plausible.js',
+      defer: true,
+      "data-domain": "mesba7.com",
+    }]
+
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
