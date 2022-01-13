@@ -2,7 +2,7 @@ export const state = () => ({
     options: {
         paragraphs: 4,
         category: 'text',
-        vocalized: true
+        vocalized: false
     },
     result: [],
     baseUrl: process.env.baseUrl,
@@ -10,6 +10,14 @@ export const state = () => ({
 
 export const actions = {
     async generate (store) {
+        if (store.state.options.category == "ipsum") {
+            const t = "وَلَقَدْ شَجَتْنِي طَفْلَةٌ بَرَزَتْ صَحًا، كَالشَّمْسِ خَثْمَاءُ الْعِظَامِ بِذِي الْغَضَا"
+            const result = Array(store.state.options.paragraphs).fill(t)
+
+            store.commit('SET_RESULT', result)
+            return
+        }
+
         const url = new URL(store.state.baseUrl + '/sample')
         
         for (let key of Object.keys(store.state.options)) {

@@ -61,7 +61,7 @@ export default {
   },
 
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:5000'
+    baseUrl: process.env.BASE_URL || 'http://localhost:8000'
   },
 
   pwa: {
@@ -84,7 +84,8 @@ export default {
     base64: true,
     families: {
       'Aref+Ruqaa': true,
-      'Almarai': true
+      'Almarai': true,
+      'amiri': true,
     }
   }
 }

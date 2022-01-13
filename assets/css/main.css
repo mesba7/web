@@ -3,6 +3,11 @@
 @tailwind utilities;
 @tailwind forms;
 
+@font-face {
+    font-family: "dubai";
+    src: url(../fonts/dubai-regular.otf);
+}
+
 @layer base {
     body {
         @apply bg-gray-50
@@ -29,6 +34,9 @@
 
     .font-almarai {
         font-family: 'Almarai';
+    }
+    .font-amiri {
+        font-family: 'Amiri'
     }
 }
 

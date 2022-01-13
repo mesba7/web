@@ -12,12 +12,12 @@
                 <div>نوع النص</div>
                 <span class="flex flex-1 grow"></span>
                 <select v-model="category" @change="updateCategory($event)" class="w-1/3">
-                    <option value="text">عام</option>
+                    <option value="text">عشوائي</option>
                     <option value="hadith">حديث</option>
                     <option value="aya">آية</option>
                     <option value="proverb">مثل</option>
-                    <option value="phrase">عبارة</option>
-                    <option value="poetry">شعر</option>
+                    <!-- <option value="phrase">عبارة</option> -->
+                    <option value="poem">شعر</option>
                 </select>
             </div>
 
@@ -35,7 +35,7 @@ export default {
     data () {
         return {
             category: 'text',
-            vocalized: true,
+            vocalized: false,
         }
     },
     methods: {
