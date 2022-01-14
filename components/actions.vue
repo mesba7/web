@@ -16,12 +16,11 @@ export default {
             this.$store.dispatch('generate')
         },
         copy () {
-            let txt = ''
-            for (const p of this.$store.state.result) {
-                txt += p + ' '
-            }
+            const txt = this.$store.state.result
 
-            navigator.clipboard.writeText(txt)
+            const all = Array(this.$store.state.repeat).fill(txt)
+
+            navigator.clipboard.writeText(all.join('\n'))
         }
     }
 }

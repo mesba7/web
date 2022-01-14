@@ -1,9 +1,11 @@
 <template>
   <section class="mt-6 md:mt-0">
 
-      <section  class="">
-        <div v-for="(item, index) in $store.state.result" :key="index">
-          <p class="text-gray-700 text-xl paragraph mb-6">{{ item }}</p>
+      <section class="">
+        <div>
+          <p class="text-gray-700 text-xl paragraph mb-6" v-for="i in $store.state.repeat" :key="i">
+            {{ $store.state.result}} 
+          </p>
         </div>
       </section>
 
@@ -24,5 +26,9 @@ export default {
 <style scoped>
 .paragraph {
   line-height: 2rem;
+}
+
+p ::after {
+  content: " "
 }
 </style>
