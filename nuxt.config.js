@@ -5,7 +5,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'مِصباح',
+    title: 'مِصباح | لتوليد النصوص العشوائية باللغة العربية',
     htmlAttrs: {
       lang: 'ar',
       dir: 'rtl',
@@ -13,7 +13,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'توليد النعوص العربية' },
+      { hid: 'description', name: 'description', content: 'مصباح هو أداة لتوليد النصوص العشوائية باللغة العربية لاستخدامها في قوالب التصميم. يمكنك التحكم في عدد الجمل وعدد الفقرات ونسخها بضغطة زر. يمكن اعتبار مصباح كـ Lorem Ipsum للغة العربية.' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -47,6 +47,7 @@ export default {
     // '@nuxtjs/dotenv',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
+    '@nuxtjs/pwa',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -86,6 +87,18 @@ export default {
       'Aref+Ruqaa': true,
       'Almarai': true,
       'amiri': true,
+    }
+  },
+
+  pwa: {
+    manifest: {
+      name: 'مِصباح',
+      short_name: 'مِصباح',
+      description: 'مصباح هو أداة لتوليد النصوص العشوائية باللغة العربية لاستخدامها في قوالب التصميم. يمكنك التحكم في عدد الجمل وعدد الفقرات ونسخها بضغطة زر. يمكن اعتبار مصباح كـ Lorem Ipsum للغة العربية.',
+      background_color: '#ffffff',
+      theme_color: '#000',
+      dir: 'rtl',
+      lang: 'ar'
     }
   }
 }
