@@ -48,6 +48,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-fonts',
     '@nuxtjs/pwa',
+    '@nuxtjs/sitemap',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -56,24 +57,11 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  generate: {
-    subFolders: false
-  },
+    publicPath: '/public/'
   },
 
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:8000'
-  },
-
-  pwa: {
-    manifest: {
-      name: 'Mesba7',
-      description: 'arabic generator',
-      lang: 'ar',
-      dir: 'rtl',
-      background_color: "",
-      theme_color: "",
-    }
   },
 
   eslint: {
@@ -91,6 +79,10 @@ export default {
   },
 
   pwa: {
+    meta: {
+      ogHost: 'https://mesba7.com',
+      ogImage: true,
+    },
     manifest: {
       name: 'مِصباح',
       short_name: 'مِصباح',
@@ -98,7 +90,12 @@ export default {
       background_color: '#ffffff',
       theme_color: '#000',
       dir: 'rtl',
-      lang: 'ar'
+      lang: 'ar',
+      useWebmanifestExtension: false
     }
+  },
+  sitemap: {
+    hostname: 'https://mesba7.com',
+    gzip: true
   }
 }

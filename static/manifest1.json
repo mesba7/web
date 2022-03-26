@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "manifest_version": 2,
+  "name": "__MSG_extName__",
+  "homepage_url": "https://mesba7.com",
+  "description": "__MSG_extDescription__",
+  "default_locale": "ar",
+  "permissions": [
+    "<all_urls>",
+    "*://*/*"
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png",
+    "512": "icons/512.png"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "__MSG_extName__",
+    "default_icon": {
+      "19": "icons/19.png",
+      "38": "icons/38.png",
+      "48": "icons/48.png"
+    }
+  }
+}

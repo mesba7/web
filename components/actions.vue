@@ -20,7 +20,14 @@ export default {
 
             const all = Array(this.$store.state.repeat).fill(txt)
 
-            navigator.clipboard.writeText(all.join('\n'))
+            // console.log(window.parent)
+            if (window.parent) {
+                console.log('should cancel')
+                window.parent.postMessage({ pluginMessage: {type: 'copy', text: all.join('\n')}, pluginId: '*'}, '*')
+                // parent.postMessage({ pluginMessage: { type: 'cancel' }, pluginId: '*' }, "*")
+            } else {
+                navigator.clipboard.writeText(all.join('\n'))
+            }
         }
     }
 }
