@@ -84,14 +84,15 @@ export default {
       ogImage: true,
     },
     manifest: {
-      name: 'مِصباح',
+      name: 'مِصباح لتوليد النصوص العشوائية',
       short_name: 'مِصباح',
       description: 'مصباح هو أداة لتوليد النصوص العشوائية باللغة العربية لاستخدامها في قوالب التصميم. يمكنك التحكم في عدد الجمل وعدد الفقرات ونسخها بضغطة زر. يمكن اعتبار مصباح كـ Lorem Ipsum للغة العربية.',
       background_color: '#ffffff',
-      theme_color: '#000',
+      theme_color: '#000000',
       dir: 'rtl',
       lang: 'ar',
-      useWebmanifestExtension: false
+      useWebmanifestExtension: false,
+      publicPath: '/public/'
     }
   },
   sitemap: {
