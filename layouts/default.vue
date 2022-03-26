@@ -24,7 +24,8 @@
       <aside
         class="order-first md:order-last flex grow flex-col h-full w-full md:w-2/6 md:block border-gray-100 border-b-2 md:border-b-0 md:border-r-2 px-3 md:px-6"
       >
-        <div class="text-gray-400 bg-gray-100 rounded-sm px-3">
+        <div class="text-gray-600 bg-gray-100 rounded-sm px-3">
+          <h1 class="font-sans text-lg">توليد نصوص عربية عشوائية</h1>
           <p class>يمكنك استخدام مصباح لانشاء قوالب نصية عشوائية لاستخدامها في التصميمات مثلًا.</p>
         </div>
         <h4 class="text-gray-500 font-bold text-xl mt-4 mb-3">الاعدادات</h4>
@@ -32,7 +33,7 @@
         <actions class="mt-9" />
         <span class="flex flex-1 grow" />
         <footer class="mt-4">
-          <p class="text-gray-400">
+          <p class="text-gray-600">
             تم التطوير بواسطة
             <a
               target="_blank"
@@ -40,16 +41,16 @@
               class="text-green-900 font-bold"
             >اسلام شحاته</a>
           </p>
-          <p class="text-gray-400">
+          <p class="text-gray-500">
             بالاعتماد على مكتبة
             <a
               target="_blank"
               href="https://github.com/linuxscout/Arrand-arabic-random-text"
             >arrand.</a>
           </p>
-          <nuxt-link class="text-gray-400 hover:text-black" to="/privacy">
+          <p><nuxt-link class="text-gray-500 hover:text-black" to="/privacy">
             سياسة الخصوصية
-          </nuxt-link>
+          </nuxt-link></p>
         </footer>
       </aside>
     </div>
