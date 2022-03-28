@@ -18,15 +18,9 @@ const url = `${process.env.baseUrl}/sample?length=2`
 export default {
   name: 'IndexPage',
   async asyncData ({ store }) {
-    if (window.parent) {
-      console.log('parent yess!!!')
-    }
     store.dispatch('generate')
   },
   created() {
-    if (window.parent) {
-      console.log('parent yess!!!')
-    }
   }
 }
 </script>

@@ -26,7 +26,7 @@
       >
         <div class="text-gray-600 bg-gray-100 rounded-sm px-3">
           <h1 class="font-sans text-lg">توليد نصوص عربية عشوائية</h1>
-          <p class>يمكنك استخدام مصباح لانشاء قوالب نصية عشوائية لاستخدامها في التصميمات مثلًا.</p>
+          <p class="paragraph">يمكنك استخدام مصباح لانشاء قوالب نصية عشوائية لاستخدامها في التصميمات مثلًا.</p>
         </div>
         <h4 class="text-gray-500 font-bold text-xl mt-4 mb-3">الاعدادات</h4>
         <options />
